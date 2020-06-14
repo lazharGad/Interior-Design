@@ -1,0 +1,846 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+*
+{
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+header
+{
+  display : grid;
+  grid-template-rows : 1fr 1fr;
+  height : 100vh;
+  nav
+    {
+      z-index : 100000;
+      display : grid;
+      grid-template-columns : 1fr 1fr;
+      width : 100vw;
+      position : fixed;
+      padding : 0 90px;
+      background-color: #fff;
+      .logo {
+        margin-left : 14px;
+        align-self : center;
+        width : 180px;
+        display : grid;
+        grid-template-columns : 1fr 1fr;
+        span
+        {
+          padding : 2px;
+          padding-left : 0;
+          letter-spacing : 2px;
+          font-size : 15px;
+          font-family : 'Raleway',sans-serif;
+          width : 130px;
+          transition : .4s;
+          align-self : center;
+          justify-self : center;
+          }
+        
+        
+        
+}
+      @media screen and (max-width:768px) {
+        
+          .logo {
+        margin-left : -40px;
+        
+        span
+        {
+          padding : 2px;
+          padding-left : 0;
+          letter-spacing : 2px;
+          font-size : 12px;
+          font-family : 'Raleway',sans-serif;
+          width : 130px;
+          transition : .4s;
+          align-self : center;
+          justify-self : center;
+          }
+          }}
+      
+      .nav
+      {align-self : center;
+        justify-self : end;
+        .menu {
+	line-height: 100px;
+	
+	a {
+		color: #000;
+		text-decoration: none;
+    font-size : 16px;
+    font-family : 'Raleway',sans-serif;
+		padding-right: 28px;
+		transition: 0.4s;
+		&:hover {
+			color: #3498db;
+		}
+	}
+}
+.show-menu-btn {
+	transition: 0.4s;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	float: right;
+	transition: 0.4;
+	i {
+		line-height: 100px;
+	}
+	&:hover {
+		color: #3498db;
+	}
+}
+.hide-menu-btn {
+	transition: 0.4s;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	&:hover {
+		color: #3498db;
+	}
+}
+.hide-search {
+	transition: 0.4s;
+	cursor: pointer;
+	display: none;
+}
+.show-search {
+	float: right;
+	
+	cursor: pointer;
+}
+
+
+
+#schk {
+	&:checked {
+		~ {
+			.search {
+				right: 0;
+				transition: 0.6s;
+			}
+		}
+	}
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+#chk {
+	position: absolute;
+	visibility: hidden;
+	z-index: -1111;
+}
+@media screen and (max-width:850px) {
+	.show-menu-btn {
+		display: block;
+		transition: 0.4s;
+	}
+	.hide-menu-btn {
+		display: block;
+		transition: 0.4s;
+		position: absolute;
+		top: 40px;
+		right: 40px;
+	}
+  nav
+  {
+    padding : 0;
+    
+  }
+	.menu {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: #fff;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 0.7s;
+		a {
+			display: block;
+			padding: 20px;
+      color : #333;
+      font-size : 25px;
+		}
+	}
+	#chk {
+		&:checked {
+			~ {
+				.menu {
+					right: 0;
+				}
+			}
+		}
+	}
+	.search {
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		background-color: #333;
+		right: 0;
+		transition: 0.6s;
+    input
+    {
+      color : #fff;
+    }
+	}
+	#schk {
+		&:checked {
+			~ {
+				.search {
+					right: 0;
+					transition: 0.6s;
+				}
+			}
+		}
+	}
+  .info
+  {
+    .social
+    {
+      justify-self : center;
+    }
+  }
+}
+      }
+
+
+    }
+
+.head
+{
+  
+  width :85vw;
+  height : 100vh;
+  margin : 0 auto;
+  background-image: url('https://i.postimg.cc/mD1yynRz/architectural-design-architecture-chairs-comfortable-312029.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment : fixed;
+  .title
+  {
+    margin : 350px auto 0 auto;
+    text-align : center;
+    color : #fefefe;
+    h1
+    {
+      font-family : 'Raleway',sans-serif;
+      letter-spacing : 15px;
+      font-size : 70px;
+      line-height : 130px;
+      transition : .4s;
+    }
+    
+    p
+    {
+      font-family : 'Raleway' ,sans-serif;
+      letter-spacing : 20px;
+      font-size : 30px;
+      transition : .4s;
+    }
+  }
+  @media only screen and (max-width:768px)
+{
+  .title
+  {
+    
+    h1
+    {
+      font-family : 'Raleway',sans-serif;
+      letter-spacing : 10px;
+      font-size : 50px;
+      line-height : 90px;
+      transition : .4s;
+    }
+    p
+    {
+      font-family : 'Raleway' ,sans-serif;
+      letter-spacing : 10px;
+      font-size : 20px;
+      transition : .4s;
+    }
+  }
+}
+  @media only screen and (max-width:520px)
+  {
+    .title
+  {
+    
+    h1
+    {
+      font-family : 'Raleway',sans-serif;
+      letter-spacing : 10px;
+      font-size : 30px;
+      line-height : 90px;
+      
+    }
+    p
+    {
+      font-family : 'Raleway' ,sans-serif;
+      letter-spacing : 10px;
+      font-size : 10px;
+    }
+  }
+  }
+}
+}
+
+.about
+{
+ 
+  padding-top : 150px;
+  width :85vw;
+  height : 70vh;
+  margin : 0 auto;
+  h4
+  {
+    font-family : 'Arapey','Old Standard TT';
+    color : #777;
+    text-align : center;
+    font-size : 20px;
+    letter-spacing : 1px;
+    transition : .4s;
+  }
+  p
+  {
+    font-family : 'Raleway' ,sans-serif;
+    text-align : center;
+    font-size : 1.4em;
+    margin : 40px auto;
+    width : 450px;
+    letter-spacing : 1px;
+    line-height: 1.2em;
+    transition : .4s;
+  }
+   @media only screen and (max-width:768px)
+   {
+     h4
+    {
+    
+      transition : .4s;
+    }
+    p
+    {
+    font-family : 'Raleway' ,sans-serif;
+    text-align : center;
+    font-size : 1.2em;
+    margin : 40px auto;
+    width : 450px;
+    letter-spacing : 1px;
+    line-height: 1.2em;
+      transition : .4s;
+    }
+  }
+  @media only screen and (max-width:520px)
+  {
+    h4
+    {
+    
+      transition : .4s;
+    }
+    p
+    {
+    font-family : 'Raleway' ,sans-serif;
+    text-align : center;
+    font-size : .8em;
+    margin : 40px auto;
+    width : 300px;
+    letter-spacing : 1px;
+    line-height: 1.2em;
+      transition : .4s;
+    }
+  }
+}
+
+.portfolio
+{
+ 
+  
+  width :85vw;
+  height : 70vh;
+  margin : 0 auto;
+  h4
+  {
+    font-family : 'Arapey','Old Standard TT';
+    color : #777;
+    text-align : center;
+    font-size : 20px;
+    letter-spacing : 1px;
+    transition : .4s;
+    margin-bottom : 70px;
+  }
+  
+   @media only screen and (max-width:768px)
+   {
+     h4
+    {
+    
+      transition : .4s;
+    }
+    
+  }
+  @media only screen and (max-width:520px)
+  {
+    h4
+    {
+    
+      transition : .4s;
+    }
+    
+  }
+  .grid {
+	
+  display : grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+	figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		margin: 10px 1%;
+		min-width: 320px;
+		max-width: 480px;
+		max-height: 360px;
+		width: 48%;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+		img {
+			position: relative;
+			display: block;
+      height : 350px;
+			width : 150%;
+			opacity: 0.8;
+		}
+		figcaption {
+			padding: 2em;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			&::before {
+				pointer-events: none;
+			}
+			&::after {
+				pointer-events: none;
+			}
+			>a {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1000;
+				text-indent: 200%;
+				white-space: nowrap;
+				font-size: 0;
+				opacity: 0;
+			}
+		}
+		h2 {
+			word-spacing: -0.15em;
+			font-weight: 300;
+			margin: 0;
+			span {
+				font-weight: 800;
+			}
+		}
+		p {
+			margin: 0;
+			letter-spacing: 1px;
+			font-size: 68.5%;
+      font-family : 'Raleway',sans-serif;
+      font-size : 12px;
+		}
+	}
+}
+figure.effect-sadie {
+	figcaption {
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 90%);
+			background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 90%);
+			content: '';
+			opacity: 0;
+			-webkit-transform: translate3d(0,50%,0);
+			transform: translate3d(0,50%,0);
+			-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+			transition: opacity 0.35s, transform 0.35s;
+		}
+	}
+	h2 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		color: #484c61;
+		-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+		transition: transform 0.35s, color 0.35s;
+		-webkit-transform: translate3d(0,-50%,0);
+		transform: translate3d(0,-50%,0);
+	}
+	p {
+		-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+		transition: opacity 0.35s, transform 0.35s;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 2em;
+		width: 100%;
+		opacity: 0;
+		-webkit-transform: translate3d(0,10px,0);
+		transform: translate3d(0,10px,0);
+	}
+	&:hover {
+		h2 {
+			color: #fff;
+			-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+			transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+		}
+		figcaption {
+			&::before {
+				opacity: 1;
+				-webkit-transform: translate3d(0,0,0);
+				transform: translate3d(0,0,0);
+			}
+		}
+		p {
+			opacity: 1;
+			-webkit-transform: translate3d(0,0,0);
+			transform: translate3d(0,0,0);
+		}
+	}
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	&:after {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	&:before {
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+@media screen and (max-width: 50em) {
+	.portfolio-content {
+		padding: 0 10px;
+		text-align: center;
+	}
+	.grid {
+		figure {
+			display: inline-block;
+			float: none;
+			margin: 10px auto;
+			width: 100%;
+		}
+	}
+}
+
+
+}
+
+.contact
+{
+    margin : 1300px auto 100px auto;
+    text-align : center;
+   
+  
+  h4
+  {
+    font-family : 'Arapey','Old Standard TT';
+    color : #777;
+    text-align : center;
+    font-size : 20px;
+    letter-spacing : 1px;
+    transition : .4s;
+    margin-bottom : 70px;
+  }
+  h3
+  {
+    font-size : 35px;
+    font-family : 'Raleway' ,sans-serif;
+    margin-bottom : 30px;
+    transition : .4s;
+  }
+  
+   @media only screen and (max-width:768px)
+   {
+     h4
+    {
+      
+      transition : .4s;
+    }
+     h3
+     {
+       
+       font-size : 30px;
+    font-family : 'Raleway' ,sans-serif;
+    margin-bottom : 30px;
+       transition : .4s;
+     }
+    
+  }
+  @media only screen and (max-width:520px)
+  {
+    h4
+    {
+    
+      transition : .4s;
+    }
+    h3
+     {
+       
+       font-size : 26px;
+    font-family : 'Raleway' ,sans-serif;
+    margin-bottom : 30px;
+       transition : .4s;
+     }
+    
+  }
+  
+ form
+  {
+    margin : 10px auto 70px auto;
+    width : 480px;
+    text-align : center;
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    input
+    {
+      width : 350px;
+      border-radius : 0px;
+      border : .5px solid #000;
+      padding-left : 10px;
+      &:not(:placeholder-shown)     
+    {
+    border-color: #E64747;
+    }
+    &:valid {
+    border-color: #1FE01F;
+    }
+    }
+  .submit
+    {
+      justify-self : center;
+      align-self : center;
+      padding-top : 5px;
+    }
+  }
+  @media only screen and (max-width:768px)
+   {
+    form
+  {
+    width : 430px;
+    
+    input
+    {
+      width : 300px;
+      border-radius : 0px;
+      border : .5px solid #000;
+      padding-left : 10px;
+      &:not(:placeholder-shown)     
+    {
+    border-color: #E64747;
+    }
+    &:valid {
+    border-color: #1FE01F;
+    }
+    }
+  span
+    {
+      font-family : 'Raleway' ,sans-serif;
+      font-weight : 500;
+      transition : .4s;
+      cursor : pointer;
+      &:hover
+      {
+        font-weight : 800;
+        transition : .4s;
+      }
+    }
+  }
+    
+  }
+  @media only screen and (max-width:520px)
+  {
+    form
+  {
+    width : 350px;
+    
+    input
+    {
+      width : 230px;
+      border-radius : 0px;
+      border : .5px solid #000;
+      padding-left : 10px;
+      &:not(:placeholder-shown)     
+    {
+    border-color: #E64747;
+    }
+    &:valid {
+    border-color: #1FE01F;
+    }
+    }
+  span
+    {
+      font-family : 'Raleway' ,sans-serif;
+      font-weight : 500;
+      transition : .4s;
+      cursor : pointer;
+      &:hover
+      {
+        font-weight : 800;
+        transition : .4s;
+      }
+    }
+  }
+    
+  }
+  
+  .info-contact
+  {
+    a
+    {
+      font-family : 'Raleway' ,sans-serif;
+      font-weight : 700;
+      letter-spacing : 2px;
+      color : #333;
+      text-decoration : none;
+      line-height : 50px;
+      font-size : 18px;
+      transition : .4s;
+    }
+    p
+    {
+      font-family : 'Raleway' ,sans-serif;
+      font-weight : 700;
+      letter-spacing : 2px;
+      color : #333;
+      line-height : 20px;
+      font-size : 18px;
+      transition : .4s;
+    }
+     @media only screen and (max-width:768px)
+   {
+     a
+    {
+      font-size : 17px;
+      transition : .4s;
+    }
+    p
+    {
+     font-size : 17px;
+      transition : .4s;
+    }
+    
+  }
+  @media only screen and (max-width:520px)
+  {
+    a
+    {
+      font-size : 15px;
+      transition : .4s;
+    }
+    p
+    {
+      font-size : 15px;
+      transition : .4s;
+    }
+    
+  }
+  }
+  @media only screen and (max-width:768px)
+   {
+     .contact
+     {
+       background-color: red;
+     }
+  }
+  
+}
+
+    
+@media only screen and (max-width:768px)
+  {
+    .contact 
+    {
+       margin-top : 2400px;
+
+    }
+  }
+
+footer
+{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+  background-color: #fff;
+ text-align : center;
+        font-family : 'Raleway' ,sans-serif;
+padding-bottom : 15px;
+  
+  .social
+  {
+    i
+    {
+      font-size : 15px;
+    }
+    padding-top : 10px ;
+    padding-bottom : 10px;
+    span
+    {
+      padding-right : 20px;
+    font-size : 20px;
+    }
+  }
+  span
+  {
+    font-size : 18px;
+  }
+  @media only screen and (max-width:768px)
+  {
+    .social
+  {
+    i
+    {
+      font-size : 15px;
+    }
+    padding-top : 10px ;
+    padding-bottom : 10px;
+    span
+    {
+      padding-right : 20px;
+      font-size : 20px;
+    }
+    
+  }
+    span
+  {
+    font-size : 15px;
+  }
+  }
+}
